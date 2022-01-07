@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace SalesWebMvc.Services.Exceptions {
-    public class IntegrityException {
+    public class IntegrityException : ApplicationException {
+        public IntegrityException(string message) : base(message) {
+        }
     }
 }
